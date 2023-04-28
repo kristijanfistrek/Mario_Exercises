@@ -23,7 +23,7 @@ Uz to, zapisivati ćemo kvalitetu znanja na kraju svakog odrađenog poglavlja, g
 
 | Datum         | Broj predavanja | Gdje smo stali   |
 | ------------- |:--------------  | ----------------:|
-| Travanj, 2023 | 1               | Varijable/blokovi|
+| Travanj, 2023.| 1               | Varijable/blokovi|
 
 ******
 
@@ -73,4 +73,88 @@ Ne mora nužno ići deklaracija pa inicijalizacija, to možemo odraditi u jednoj
 
 ```javascript
 var b = 5;
+```
+> **DISCLAIMER**: BITNO JE INICIJALIZIRATI VARIJABLU NA ODREĐENU VRIJEDNOST PRIJE NJENOG KORIŠTENJA.
+
+***
+
+<a name="tipovi-podataka"></a>
+## **2. Tipovi podataka**
+
+Podaci u programerskom svijetu, a i u stvarnom svijetu, postoje u više vrste.
+Tri glave kategorije s kojima ćemo mi zasad raditi su: **string**, **boolean** i **number**.
+
+> string vrijednost je specifična po tome što se dodjeljuje nekoj varijabli pomoću navodnih znakova.
+
+> imena boolean varijabli se općenito pišu kao pitanja.
+
+```javascript
+var ime = "Mario"; 
+var godine = 22;
+var isOld = false;
+```
+
+<a name="varijable-blokovi"></a>
+## **3. Tipovi varijabli i blokovi koda**
+
+***
+
+1. Tipovi varijabli
+
+U JS-u ćemo se zasad raditi s 3 osnovne kategorije varijabli.
+
+One su: **var**, **let** i **const**.
+
+```javascript
+var ime = "Mario";
+let godine = 22;
+const isOld = false;
+```
+> Obesrabruje se i ne preporuča da se koristi ključna riječ **var** za definiranje varijabli.
+
+## Definiranje s **var** ključnom riječi 
+
+Ključna riječ **var** je godinama imala određene nedostatke koje mogu prouzročiti mnogo nepoželjnih rezultata.
+
+Npr. :
+
+- Ista varijabla deklarirana s ključnom riječi **var** može biti deklarirana opet.
+
+```javascript
+var ime = "Mario";
+
+// S var imamo problem mogućnosti prepisivanja prethodno deklarirane varijable. Netko može kasnije u kodu napisati: 
+
+var ime = "Luka"; 
+
+// te će ovom akcijom netko prepisati vrijednost koja nam je bila potrebna.
+```
+
+- Varijabla kreirana s ključnom riječi **var** nije vezana za određeni blok koda.
+
+Npr. : 
+
+Ako kreiramo zaseban blok koda kao što je prikazano dolje, 
+
+```javascript
+
+{
+  var x = 2;
+}
+
+```
+
+## Definiranje s **let** ključnom riječi
+
+Ključna riječ **let** nam omogućuje upravo suprotno od onoga što se događalo prethodno s **var** varijablom.
+
+2. Blokovi koda
+
+Blokovi koda su specifični po tome da se odvajaju sa {} zagradama.
+Sve što se nalazi unutar vitičastih zagrada -> {} se smatra zasebnim blokom koda.
+
+```javascript
+{
+    var ime = "Mario";
+}
 ```
