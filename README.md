@@ -56,7 +56,9 @@ console.log(a);
 **2. Korak**:  varijablu, prije korištenja, potrebno je inicijalizirati na njenu vrijednost. To je bitno napraviti ikakve akcije s tom varijablom.
 
 
-Ovo je zove inicijalizacija, ili ti dodijeljivanje vrijednosti određenoj varijabli. Inicijalizacija se radi tako da se desno od imena varijable, s operatorom jednako (=) dodijeli određena vrijednost.
+Ovo je zove inicijalizacija, ili ti dodijeljivanje vrijednosti određenoj varijabli. Inicijalizacija se radi tako da se desno od imena varijable, s operatorom jednako (=) dodijeli određena vrijednost. 
+
+> Bitno je za napomenuti da će slijedeća linija koda jedino biti validna ako smo varijablu a prethodno deklarirati negdje u našem kodu. 
 
 ```javascript
 a = 2;
