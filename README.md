@@ -47,6 +47,8 @@ Varijablu deklariramo, zasad, na ovaj način. Ona se sastoji od deklaracijskog d
 
 Ako koristimo varijablu a, prije njene inicijalizacije, dobiti ćemo upozorenje undefined. Pošto njena vrijednost, nije definirana.
 
+> Način na koji ćemo ispisati varijable i provjeravanje stanje naše JavaScript skripte, je uz pomoć console log naredbe. 
+
 ```javascript
 console.log(a);
 ```
